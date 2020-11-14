@@ -9,7 +9,7 @@ from random import randint
 
 class Client:
     def __init__(self):
-        self.serverIP = socket.gethostbyname('G7')
+        self.serverIP = socket.gethostbyname('localhost')
         self.serverPort = 7734
         self.clientSocket = socket.socket()
         self.uploadServerPort = 1024 + randint(1, 48000)
